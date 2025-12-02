@@ -1,0 +1,112 @@
+/* GENERAL */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* HERO SECTION */
+.hero {
+    height: 400px;
+    background: url('heero.jpeg') center/cover no-repeat;
+    position: relative;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.4); /* Dark overlay */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+}
+
+/* SECTION TITLE */
+.section-title {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* CARDS SECTION */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+    background: rgb(43, 43, 48);
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    padding-bottom: 20px;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3, .card p {
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* DEVELOP SECTION */
+.develop {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* CONTACT + ABOUT */
+.contact-about {
+    display: flex;
+    justify-content: space-between;
+     text-align: center;
+    padding: 40px 0;
+}
+
+.contact, .about {
+    width: 50%;
+    padding: 40px 20px;
+    
+    color: white;
+}
+
+.contact {
+    background: #26a9e0;
+     text-align: center;
+}
+
+.about {
+    background: #333;
+     text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
